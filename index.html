@@ -706,7 +706,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"hiFriends","qid":"1","text":"Hi Fri
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => window.alert('Success! Thank You for spending time in filling out this form. We will get back to you regarding the details of Placement Prep Program soon.'))
         .catch(error => console.error('Error!', error.message))
     })
     
